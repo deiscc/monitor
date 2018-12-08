@@ -6,11 +6,11 @@ metadata:
   labels:
     heritage: deis
     app: deis-monitor-grafana
-    router.deis.io/routable: "true"
+    router.deis.cc/routable: "true"
   annotations:
-    router.deis.io/domains: grafana
-    router.deis.io/connectTimeout: "10"
-    router.deis.io/tcpTimeout: "1200"
+    router.deis.cc/domains: grafana
+    router.deis.cc/connectTimeout: "10"
+    router.deis.cc/tcpTimeout: "1200"
 spec:
   ports:
   - port: 80

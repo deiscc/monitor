@@ -1,5 +1,5 @@
 # InfluxDB
-[![Docker Repository on Quay](https://quay.io/repository/deisci/influxdb/status "Docker Repository on Quay")](https://quay.io/repository/deisci/influxdb)
+[![Docker Repository on Quay](https://quay.io/repository/deiscc/influxdb/status "Docker Repository on Quay")](https://quay.io/repository/deiscc/influxdb)
 
 ## Configuration
 Right now the configuration is completely static but eventually I hope to use the [envtpl](https://github.com/arschles/envtpl) project to help provide a more robust solution.

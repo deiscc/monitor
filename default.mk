@@ -4,13 +4,13 @@ SHELL := /bin/bash
 DOCKER_HOST = $(shell echo $$DOCKER_HOST)
 BUILD_TAG ?= git-$(shell git rev-parse --short HEAD)
 DEIS_REGISTRY ?= ${DEV_REGISTRY}
-IMAGE_PREFIX ?= deis
+IMAGE_PREFIX ?= deiscc
 
 include ../includes.mk
 include ../versioning.mk
 include ../deploy.mk
 
-TEST_ENV_PREFIX := docker run --rm -v ${CURDIR}:/bash -w /bash quay.io/deis/shell-dev
+TEST_ENV_PREFIX := docker run --rm -v ${CURDIR}:/bash -w /bash deiscc/shell-dev
 
 build: docker-build
 push: docker-push

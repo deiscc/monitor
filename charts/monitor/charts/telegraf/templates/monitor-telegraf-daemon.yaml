@@ -5,7 +5,7 @@ metadata:
   labels:
     heritage: deis
   annotations:
-    component.deis.io/version: {{ .Values.docker_tag }}
+    component.deis.cc/version: {{ .Values.docker_tag }}
 spec:
   {{- if ge .Capabilities.KubeVersion.Minor "6" }}
   updateStrategy:
